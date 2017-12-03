@@ -26,7 +26,10 @@ interface Method {
     double calc(double value);
 }
 
-public class Approxi {
+public final class Approxi {
+    
+    private Approxi(){
+    }
 
     public static Point2D GetApproximated(Point2D left, Point2D right, double x) {
         return GetApproximated(left, right, x, i -> i);
